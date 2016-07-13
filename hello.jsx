@@ -8,6 +8,8 @@ class Hello extends React.Component{
         return (<div>
                 HI THERE<Name alias={name}/>
                 <Footer/>
+                <Footer/>
+                <Footer/>
             </div>);
     }
 

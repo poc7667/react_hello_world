@@ -9,7 +9,10 @@ class Footer extends React.Component {
     }
 
     render(){
-        return <div> From {this.this.state.name} </div>;
+        return <div onClick={()=>{
+            const name = (this.state.name === 'John Smith'? 'A' : 'B');
+            this.setState({name: name});
+        }}> From {this.state.name} </div>;
     }
 }
 
