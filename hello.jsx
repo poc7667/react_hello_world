@@ -1,8 +1,14 @@
 import React from 'react';
+import Name from './name.jsx';
+import Footer from './footer.jsx';
 
 class Hello extends React.Component{
     render(){
-        return <h1>HI THERE</h1>;
+        const name = "VIDEO INPUT";
+        return (<div>
+                HI THERE<Name alias={name}/>
+                <Footer/>
+            </div>);
     }
 
 }
